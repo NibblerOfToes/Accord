@@ -3,11 +3,11 @@
 
 <p><h2>Requirements<h2></p>
 <p><h3>Functional:<h3></p>
-<p>Buttons to transition between pages</p>
-<p>Way for users to connect</p>
+<p>- Buttons to transition between pages</p>
+<p>- Way for users to connect</p>
 
 <p><h3>Non-Functional<h3></p>
 <p>Multiple web pages</p>
-<p>Suitable colouring of backgrounds and text</p>
-<p>Appropiately sized and fonted text</p>
-<p>Inclusion of images and other elements</p>
+<p>- Suitable colouring of backgrounds and text</p>
+<p>- Appropiately sized and fonted text</p>
+<p>- Inclusion of images and other elements</p>
