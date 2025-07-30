@@ -25,7 +25,7 @@
 <p></p>
 
 <h2>UI Design</h2>
-![screenshot](nice/jilm.png)
+	![alt text](nice/jilm.png)
 
 <p></p>
 
