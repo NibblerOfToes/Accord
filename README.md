@@ -25,11 +25,11 @@
 <p></p>
 
 <h2>UI Design</h2>
-<p>![Screenshot 2025-07-30 132806](Screenshot 2025-07-30 132806.png)</p>
+![Screenshot 2025-07-30 132806](Screenshot 2025-07-30 132806.png)
 
 <p></p>
 
-<p>| Syntax | Description |
+| Syntax | Description |
 | ----------- | ----------- |
 | Header | Title |
-| Paragraph | Text |</p>
+| Paragraph | Text |
