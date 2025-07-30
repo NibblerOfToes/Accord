@@ -25,7 +25,7 @@
 <p></p>
 
 <h2>UI Design</h2>
-![Screenshot 2025-07-30 132806](nice/jilm.png)
+![screenshot](nice/jilm.png)
 
 <p></p>
 
