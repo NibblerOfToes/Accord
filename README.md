@@ -31,5 +31,5 @@
 | Design Choice | Description |
 | ----------- | ----------- |
 | Colour Palette | I decided on a simple two colour design of white text on a navy blue background. It's basic but aesthetically pleasing, and the text is easily legible.  |
-| Typography |  |
-| Image/Icon choice |  |
+| Typography | I decided on the font 'Inter, as it is simple and easily legible. It is also one of the most professionally used fonts, so it works well with my website's design. |
+| Image/Icon choice | I used a simple logo that will appear on the loading screen whenever the app is opened. I also used profile pictures for the messaging system, so that users can be distinguished. These profile pictures will be customisable for each user once the app is completed. |
