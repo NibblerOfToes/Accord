@@ -28,7 +28,7 @@
 
 <p></p>
 
-| Syntax | Description |
+| Syntaxe | Descrippption |
 | ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| what | I like kids |
+| e | so does brt |
