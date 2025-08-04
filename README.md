@@ -28,7 +28,8 @@
 
 <p></p>
 
-| Syntaxe | Descrippption |
+| Design Choice | Description |
 | ----------- | ----------- |
-| what | I like kids |
-| e | so does brt |
+| Colour Palette | I decided on a simple two colour design of white text on a navy blue background. It's basic but aesthetically pleasing, and the text is easily legible.  |
+| Typography |  |
+| Image/Icon choice |  |
