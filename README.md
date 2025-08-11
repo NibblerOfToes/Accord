@@ -7,7 +7,7 @@
 
 <p><h2>Requirements</h2></p>
 <p><h3>Functional:</h3></p>
-<p>- Buttons to transition between pages</p>
+<p>- Timetable displaying periods throughout the day</p>
 <p>- Messaging system for users to connect</p>
 <p>- User authentication</p>
 <p>- Assignment submission</p>
