@@ -43,8 +43,8 @@ The goal of this project is to create a web application for a client, set up on 
 # Week 4
 
 ## Algorithm Design
+The algorithm:
 ![algorithmdesign](nice/algorithmdesign.png)
-
 
 Test case 1: Logged in User tries to send message
 ![test1](nice/test1.png)
