@@ -54,5 +54,13 @@
 <p></p>
 
 <h2>Algorithm Design</h2>
+<p>![w](nice/algorithmdesign.png)</p>
+
+
 <p></p>
-![w](nice/algorithmdesign.png)
+Test case 1: Logged in User tries to send message
+<p></p>
+
+<p></p>
+Test case 2: Logged in User tries to send inappropriate message
+<p></p>
