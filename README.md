@@ -48,5 +48,5 @@ The algorithm:
 
 | Test Case name | Preconditions | Test steps | Expected result |
 | ----------- | ----------- | ----------- | ----------- |
-| Test Case 1 |  |  |  |
-| Test Case 2 |  |  |  |
+| User attempts to send message | User must have the application, and have the messaging system open | Type in a message, hit the send button | User will be able to send the message effectively |
+| User attempts to send inappropriate message | User must have the application, and have the messaging system open | Type in an inappropriate message, hit the send button | User will receive error message 'Message failed to send: Inappropriate content detected', and message will fail to send |
