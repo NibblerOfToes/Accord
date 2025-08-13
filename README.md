@@ -47,5 +47,6 @@ The algorithm:
 ![algorithmdesign](nice/newalgorithmdesign.png)
 
 | Test Case name | Preconditions | Test steps | Expected result |
-| Test Case 1 | 
-| Test Case 2 |
+| ----------- | ----------- | ----------- | ----------- |
+| Test Case 1 |  |  |  |
+| Test Case 2 |  |  |  |
