@@ -46,6 +46,7 @@ The goal of this project is to create a web application for a client, set up on 
 The algorithm:
 ![algorithmdesign](nice/newalgorithmdesign.png)
 
+Test cases:
 | Test Case name | Preconditions | Test steps | Expected result |
 | ----------- | ----------- | ----------- | ----------- |
 | User attempts to send message | User must have the application, and have the messaging system open | Type in a message, hit the send button | User will be able to send the message effectively |
