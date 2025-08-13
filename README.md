@@ -46,7 +46,6 @@ The goal of this project is to create a web application for a client, set up on 
 The algorithm:
 ![algorithmdesign](nice/newalgorithmdesign.png)
 
-Test case 1: Logged in User tries to send message
-
-
-Test case 2: Logged in User tries to send inappropriate message
+| Test Case name | Preconditions | Test steps | Expected result |
+| Test Case 1 | 
+| Test Case 2 |
