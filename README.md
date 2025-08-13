@@ -47,7 +47,6 @@ The algorithm:
 ![algorithmdesign](nice/algorithmdesign.png)
 
 Test case 1: Logged in User tries to send message
-![test1](nice/test1.png)
+
 
 Test case 2: Logged in User tries to send inappropriate message
-![test2](nice/test2.png)
