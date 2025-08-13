@@ -44,7 +44,7 @@ The goal of this project is to create a web application for a client, set up on 
 
 ## Algorithm Design
 The algorithm:
-![algorithmdesign](nice/algorithmdesign.png)
+![algorithmdesign](nice/newalgorithmdesign.png)
 
 Test case 1: Logged in User tries to send message
 
