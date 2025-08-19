@@ -51,3 +51,13 @@ Test cases:
 | ----------- | ----------- | ----------- | ----------- |
 | User attempts to send message | User must have the application, and have the messaging system open | Type in a message, hit the send button | User will be able to send the message effectively |
 | User attempts to send inappropriate message | User must have the application, and have the messaging system open | Type in an inappropriate message, hit the send button | User will receive error message 'Message failed to send: Inappropriate content detected', and message will fail to send |
+
+# Week 5
+
+## Setting up the Database
+
+**Monday, 18/08/25**
+Today, I began setting up the database by following through the instructions in the setup document on google classroom. I downloaded python, pip, and all of the required extensions, before working through the document up until the creation of the files and the folders.
+
+**Tuesday, 19/08/25**
+Today, I finished working through the document and setting up my database. I created all of the folders necessary for my database, before creating the database table and running commands to populate it.
