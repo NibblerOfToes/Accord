@@ -61,3 +61,14 @@ Today, I began setting up the database by following through the instructions in 
 
 **Tuesday, 19/08/25**
 Today, I finished working through the document and setting up my database. I created all of the folders necessary for my database, before creating the database table and running commands to populate it.
+
+**Thursday, 21/08/25**
+Today, I figured out 
+
+# Week 6
+
+**Monday, 25/08/25**
+
+**Tuesday, 26/08/25**
+
+**Wednesday, 27/08/25**
