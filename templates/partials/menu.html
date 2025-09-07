@@ -1,8 +1,25 @@
-<div
-class="sidebar">
-<ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/classes">Classes</a></li>
-    <li><a href="/chat">Chat</a></li>
+<div class="sidebar">
+  <div class="user_icon">
+  <img src="{{ url_for('static', filename='images/user.png') }}" alt="User Icon" style="height:210px; width:150px">
+  </div>
+  <ul class="nav-list">
+    <li>
+      <a href="/">
+        <img src="{{ url_for('static', filename='images/home.png') }}" alt="Home Icon">
+        <span>Home</span>
+      </a>
+    </li>
+    <li>
+      <a href="/classes">
+        <img src="{{ url_for('static', filename='images/timetable.png') }}" alt="Classes Icon">
+        <span>Classes</span>
+      </a>
+    </li>
+    <li>
+      <a href="/chat">
+        <img src="{{ url_for('static', filename='images/messages.png') }}" alt="Chat Icon">
+        <span>Chat</span>
+      </a>
+    </li>
   </ul>
 </div>

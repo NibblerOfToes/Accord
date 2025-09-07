@@ -50,7 +50,7 @@ text-align: center;
   width: 200px;
   height: 100vh;
   background-color: white;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #ffffff;
   padding: 20px;
   box-sizing: border-box;
   position: fixed;
@@ -58,27 +58,150 @@ text-align: center;
   top: 0;
 }
 
-.sidebar h1 {
-  margin-bottom: 30px;
-  font-size: 24px;
-  color: #0f2034;
-}
-
-.sidebar ul {
-  list-style: none;
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* evenly spaced */
+  align-items: center;
+  height: 50%; /* fill sidebar height */
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.sidebar ul li {
-  margin-bottom: 20px;
+.nav-list li {
+  margin-bottom: 30px;
+  list-style-type: none;  /* this ensures no bullets */
 }
 
-.sidebar ul li a {
+.nav-list a {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;
   text-decoration: none;
   color: #0f2034;
-  font-weight: bold;
+  font-weight: 600;
+  gap: 8px; /* space between icon and label */
 }
 
-.sidebar ul li a:hover {
+.nav-list a:hover {
+  color: #046b88;
+}
+
+.nav-list img {
+  width: 60px;   /* or even 64px if you want them bold */
+  height: 80px;
+}
+
+.user-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.user-icon img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.right-panel { /*speech bubbles */
+  position: absolute;
+  top: 210px; /* adjust based on your logo height */
+  right: 125px;
+  bottom: 40px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.speech-bubble {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  color: #0f2034;
+  font-size: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  height: 200px; /* fixed height for consistency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #ffffff;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 220px; /* leaves space for sidebar */
+  padding: 40px;
+  height: calc(100vh - 80px); /* fills screen minus top padding */
+  box-sizing: border-box;
+}
+
+.message-section {
+  position: absolute;
+  left: 220px; /* width of sidebar */
+  right: 540px; /* width of right panel */
+  top: 350px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message-header {
+  font-size: 3.5rem;
+  font-weight: bold;
   color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 3px solid #ffffff;
+  padding-bottom: 2px;
+}
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.message-box {
+  background-color: #798CA3;
+  border-radius: 12px;
+  padding: 20px;
+  height: 100px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #0f2034;
+  font-size: 1rem;
+}
+
+.message-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.message-text {
+  flex: 1;
 }
