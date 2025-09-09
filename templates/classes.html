@@ -1,8 +1,50 @@
 {% extends 'layout.html' %} {% block content %}
-<div class="container">
     {% for row in content %}
-<div class="card">
-</div>
 {% endfor %}
+<div class="logo">
+    <img src="{{ url_for('static', filename='images/Accord.png') }}" alt="Accord Logo" style="height:50%; width:50%">
+</div>
+<div class="nextclass">
+  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="nextclass-icon">
+  <div class="nextclass-text">Filler text</div>
+</div>
+<div class="schedule-wrapper">
+<div class="schedule-left">
+<div class="schedule-box">
+  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
+<div class="schedule-text">Filler text</div>
+</div>
+<div class="schedule-box">
+  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
+<div class="schedule-text">Filler text</div>
+</div>
+<div class="schedule-box">
+  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
+<div class="schedule-text">Filler text</div>
+</div>
+<div class="schedule-box">
+  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
+<div class="schedule-text">Filler text</div>
+</div>
+</div>
+
+  <div class="schedule-right">
+<div class="schedule-box">
+  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
+  <div class="schedule-text">Filler text</div>
+</div>
+<div class="schedule-box">
+  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
+  <div class="schedule-text">Filler text</div>
+</div>
+<div class="schedule-box">
+  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
+<div class="schedule-text">Filler text</div>
+</div>
+<div class="schedule-box">
+  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
+<div class="schedule-text">Filler text</div>
+</div>
+  </div>
 </div>
 {% endblock %}
