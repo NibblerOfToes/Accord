@@ -324,3 +324,28 @@ text-align: center;
   flex: 1;
   text-align: center;
 }
+
+.chat-wrapper {
+  display: flex;
+  margin-left: 220px; /* leave space for sidebar */
+  padding: 40px;
+  gap: 60px;
+  align-items: stretch;
+}
+
+.chat-left,
+.chat-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.chat-divider {
+  width: 2px;
+  background-color: #ffffff;
+  opacity: 0.2;
+  border-radius: 1px;
+  height: auto; /* stretches with content */
+  align-self: stretch;
+}
