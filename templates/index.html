@@ -1,8 +1,6 @@
 {% extends 'layout.html' %} {% block content %}
-<div class="container">
     {% for row in content %}
 {% endfor %}
-</div>
 <div class="logo">
     <img src="{{ url_for('static', filename='images/Accord.png') }}" alt="Accord Logo" style="height:50%; width:50%">
 </div>
