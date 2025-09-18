@@ -1,7 +1,16 @@
 <div class="sidebar">
-  <div class="user_icon">
-  <img src="{{ url_for('static', filename='images/user.png') }}" alt="User Icon" style="height:210px; width:150px">
-  </div>
+  {% if session.name %}
+    <div class="user-greeting">
+      <span>Welcome, {{ session.name }}</span>
+    </div>
+  {% endif %}
+
+<div class="user_icon">
+  <a href="{% if session.name %}/profile{% else %}/login{% endif %}">
+    <img src="{{ url_for('static', filename='images/user.png') }}" alt="User Icon" style="height:210px; width:150px">
+  </a>
+</div>
+
   <ul class="nav-list">
     <li>
       <a href="/">

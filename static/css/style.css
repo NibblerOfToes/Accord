@@ -515,3 +515,59 @@ html, body {
   height: 100%;
   overflow: hidden;
 }
+
+.user_icon a img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.login-wrapper {
+  margin-left: 220px; /* same as sidebar width */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background-color: #1c2e4a;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  width: 300px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffe680;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #0f2034;
+  cursor: pointer;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-bottom: 10px;
+}
+
+.user-greeting {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #0f2034;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
