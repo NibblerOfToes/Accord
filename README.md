@@ -19,7 +19,7 @@ The goal of this project is to create a web application for a client, set up on 
 
 # Week 2
 
-![week2design](nice/jilm.png)
+![week2design](static/images/jilm.png)
 
 
 | Design Choice | Description |
@@ -30,7 +30,7 @@ The goal of this project is to create a web application for a client, set up on 
 
 # Week 3
 
-![week3alternate](nice/week3alternate.png)
+![week3alternate](static/images/week3alternate.png)
 
 
 | Design Choice | Description |
@@ -44,7 +44,7 @@ The goal of this project is to create a web application for a client, set up on 
 
 ## Algorithm Design
 The algorithm:
-![algorithmdesign](nice/newalgorithmdesign.png)
+![algorithmdesign](static/images/newalgorithmdesign.png)
 
 Test cases:
 | Test Case name | Preconditions | Test steps | Expected result |
