@@ -1,34 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-body {
-  background: #0f2034;
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-}
-
-main {
-  max-width: none;
-  margin: auto;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  padding: 1rem 0;
-}
-
 .about-container {
   font-size: 1.25rem;
   margin-top: 2rem;
@@ -61,9 +32,9 @@ text-align: center;
 .nav-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-around; /* evenly spaced */
+  justify-content: space-around;
   align-items: center;
-  height: 50%; /* fill sidebar height */
+  height: 50%;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -71,17 +42,17 @@ text-align: center;
 
 .nav-list li {
   margin-bottom: 30px;
-  list-style-type: none;  /* this ensures no bullets */
+  list-style-type: none;
 }
 
 .nav-list a {
   display: flex;
-  flex-direction: column; /* stack vertically */
+  flex-direction: column;
   align-items: center;
   text-decoration: none;
   color: #0f2034;
   font-weight: 600;
-  gap: 8px; /* space between icon and label */
+  gap: 8px;
 }
 
 .nav-list a:hover {
@@ -89,7 +60,7 @@ text-align: center;
 }
 
 .nav-list img {
-  width: 60px;   /* or even 64px if you want them bold */
+  width: 60px;
   height: 80px;
 }
 
@@ -105,9 +76,9 @@ text-align: center;
   border-radius: 50%;
 }
 
-.right-panel { /*speech bubbles */
+.right-panel {
   position: absolute;
-  top: 210px; /* adjust based on your logo height */
+  top: 210px;
   right: 100px;
   bottom: 40px;
   width: 450px;
@@ -123,7 +94,7 @@ text-align: center;
   color: #0f2034;
   font-size: 1.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  height: 180px; /* fixed height for consistency */
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,16 +118,16 @@ text-align: center;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  margin-left: 220px; /* leaves space for sidebar */
+  margin-left: 220px;
   padding: 40px;
-  height: calc(100vh - 80px); /* fills screen minus top padding */
+  height: calc(100vh - 80px);
   box-sizing: border-box;
 }
 
 .message-section {
   position: absolute;
-  left: 220px; /* width of sidebar */
-  right: 540px; /* width of right panel */
+  left: 220px;
+  right: 540px;
   top: 350px;
   padding: 0 40px;
   display: flex;
@@ -246,9 +217,9 @@ text-align: center;
 
 .schedule-wrapper {
   display: flex;
-  margin-left: 225px; /* leaves space for sidebar */
+  margin-left: 225px;
   padding: 40px;
-  gap: 100px; /* space between columns */
+  gap: 100px;
   align-items: flex-start;
 }
 
@@ -256,7 +227,7 @@ text-align: center;
 .schedule-right {
   display: flex;
   flex-direction: column;
-  gap: 70px; /* space between boxes */
+  gap: 70px;
 }
 
 .schedule-left {
@@ -266,11 +237,10 @@ text-align: center;
 
 .schedule-right {
   width: 550px;
-  margin-top: 20px; /* adjust this value as needed */
+  margin-top: 20px;
 }
 
 .schedule-box {
-  background-color: #d9d9d9;
   border-radius: 12px;
   padding: 20px;
   height: 100px;
@@ -330,13 +300,13 @@ text-align: center;
   margin-left: 220px;
   gap: 60px;
   align-items: stretch;
-  height: calc(100vh - 1px); /* prevents overflow from rounding errors */
+  height: calc(100vh - 1px);
   padding: 0 40px;
 }
 
 .chat-left,
 .chat-right {
-  flex: 1 1 0; /* equal width, no shrink, no grow bias */
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -352,7 +322,6 @@ text-align: center;
   padding: 30px 40px 10px;
 }
 
-/* LEFT COLUMN */
 .chat-left-header {
   padding: 40px;
   background-color: #0f2034;
@@ -364,10 +333,8 @@ text-align: center;
   padding: 0 40px 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px; /* consistent spacing between cards */
+  gap: 20px;
 }
-
-/* RIGHT COLUMN */
 
 .chat-right-body {
   flex: 1;
@@ -403,6 +370,18 @@ text-align: center;
   padding: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   gap: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-card:hover {
+  background-color: #6c7f99;
+}
+
+.contact-card.active {
+  border: 2px solid #ffe680;
+  box-shadow: 0 0 6px rgba(255, 230, 128, 0.5);
 }
 
 .contact-img {
@@ -523,7 +502,7 @@ html, body {
 }
 
 .login-wrapper {
-  margin-left: 220px; /* same as sidebar width */
+  margin-left: 220px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -571,3 +550,48 @@ html, body {
   margin-bottom: 10px;
   padding: 10px 0;
 }
+
+.add-contact-button {
+  float: right;
+  background-color: #ffe680;
+  border: none;
+  font-size: 1.5rem;
+  padding: 3px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.add-contact-popup {
+  padding: 10px;
+  background-color: #1c2e4a;
+  border-top: 1px solid #0f2034;
+}
+
+.add-contact-popup input {
+  padding: 5px;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.add-contact-popup button {
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.contact-card.active {
+  border: 2px solid #ffe680;
+}
+
+.message-indicator {
+  width: 100%;
+  height: 20px;
+  background-color: #444;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+

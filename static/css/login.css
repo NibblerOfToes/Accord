@@ -1,0 +1,87 @@
+.login-wrapper {
+  margin-left: 220px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background-color: #1c2e4a;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  width: 300px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffe680;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #0f2034;
+  cursor: pointer;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-bottom: 10px;
+}
+
+.user-greeting {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #0f2034;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+.login-box button.signup-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #0f2034;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-box button.logout-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffe680;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #0f2034;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-greeting {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+
+.profile-greeting strong {
+  color: #ffffff;
+}

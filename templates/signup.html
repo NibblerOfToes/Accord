@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="signup-wrapper">
+  <div class="signup-box">
+    <form method="POST" action="{{ url_for('signup') }}">
+      {% if error %}
+        <div class="error">{{ error }}</div>
+      {% endif %}
+      <input type="text" name="email" placeholder="Email" required>
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="password" name="password" placeholder="Password" required>
+
+      <select name="role" id="role-select" required>
+  <option value="">Select Role</option>
+  <option value="student">Student</option>
+  <option value="teacher">Teacher</option>
+</select>
+
+<div id="student-fields" style="display:none;">
+  <label for="classLevel">Class Level</label>
+  <select name="groupID" id="classLevel">
+    <option value="">Select Class</option>
+    <option value="1">Class 1</option>
+    <option value="2">Class 2</option>
+    <option value="3">Class 3</option>
+    <option value="4">Class 4</option>
+    <option value="5">Class 5</option>
+  </select>
+</div>
+
+<div id="teacher-fields" style="display:none;">
+  <label for="subject">Subject</label>
+  <input type="text" name="subject" placeholder="Subject Taught">
+</div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/signup.js') }}"></script>
+{% endblock %}

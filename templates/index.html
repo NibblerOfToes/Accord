@@ -1,35 +1,70 @@
-{% extends 'layout.html' %} {% block content %}
-    {% for row in content %}
-{% endfor %}
-<div class="logo">
-    <img src="{{ url_for('static', filename='images/Accord.png') }}" alt="Accord Logo" style="height:50%; width:50%">
-</div>
-<div class="top-header">
-  <div class="header-content">
-    <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Header Icon" class="header-img">
-    <div class="header-text">Filler text</div>
-  </div>
-</div>
-<div class="message-section">
-  <h2 class="message-header">Messages</h2>
+{% extends 'layout.html' %}
+{% block content %}
+  {% for row in content %}
+  {% endfor %}
+
+  <div class="main-wrapper">
+    <div class="message-section">
+  <h2 class="message-header">Private Messages</h2>
   <div class="message-list">
-    <div class="message-box">
-  <img src="{{ url_for('static', filename='images/user.png') }}" alt="Profile" class="message-img">
-  <div class="message-text">Filler text</div>
-</div>
-    <div class="message-box">
-  <img src="{{ url_for('static', filename='images/user.png') }}" alt="Profile" class="message-img">
-  <div class="message-text">Filler text</div>
-</div>
-    <div class="message-box">
-  <img src="{{ url_for('static', filename='images/user.png') }}" alt="Profile" class="message-img">
-  <div class="message-text">Filler text</div>
-</div>
+    {% for sender, text, date, time in private_messages %}
+      <div class="message-box">
+        <img src="{{ url_for('static', filename='images/user.png') }}" alt="Profile" class="message-img">
+        <div class="message-text">
+          <strong>{{ sender }}</strong><br>
+          {{ text }}<br>
+          <span class="message-timestamp">{{ time[:5] }} — {{ date }}</span>
+        </div>
+      </div>
+    {% endfor %}
+    {% if private_messages|length == 0 %}
+      <div class="message-box">
+        <div class="message-text">No private messages</div>
+      </div>
+    {% endif %}
   </div>
 </div>
+
 <div class="right-panel">
-  <div class="speech-bubble">filler text</div>
-  <div class="speech-bubble">filler text</div>
-  <div class="speech-bubble">filler text</div>
+  {% if role == 'teacher' %}
+    <form method="POST" class="public-message-form">
+      <h3>Send Public Message</h3>
+      <select name="target_group" required>
+        <option value="">Select Class</option>
+        {% for i in range(1, 6) %}
+          <option value="{{ i }}">Class {{ i }}</option>
+        {% endfor %}
+      </select>
+      <textarea name="message" placeholder="Write a message..." required></textarea>
+      <button type="submit" class="plus-button">+</button>
+    </form>
+  {% else %}
+    {% for sender, text, date, time in public_messages %}
+      <div class="speech-bubble">
+  <div class="bubble-sender">{{ sender }}</div>
+  <div class="bubble-text">{{ text }}</div>
+  <div class="speechbubblemessage-timestamp">{{ time[:5] }} — {{ date }}</div>
 </div>
+    {% endfor %}
+    {% if public_messages|length == 0 %}
+      <div class="speech-bubble">No public messages</div>
+    {% endif %}
+  {% endif %}
+</div>
+  </div>
+
+  <div class="nextclass-home" style="background-color: {{ current_class.color | default('#f0f0f0') }};">
+  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="nextclass-icon">
+  {% if current_class %}
+    <div class="nextclass-text">
+      {{ current_class.subject }} — {{ current_class.location }} at {{ current_class.time }}
+    </div>
+  {% else %}
+    <div class="nextclass-text">No more classes today</div>
+  {% endif %}
+</div>
+
+  <div class="logo-home">
+    <img src="{{ url_for('static', filename='images/Accord.png') }}" alt="Accord Logo">
+  </div>
 {% endblock %}

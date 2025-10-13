@@ -1,123 +1,55 @@
 {% extends 'layout.html' %}
 {% block content %}
-  {% for row in content %}
-  {% endfor %}
+<div class="chat-wrapper">
 
-  <div class="chat-wrapper">
-    <!-- LEFT COLUMN -->
-    <div class="chat-left">
-      <div class="chat-left-header">
-        <h2 class="chat-heading">Contacts</h2>
-      </div>
+  <div class="chat-left">
+    <div class="chat-left-header">
+      <h2 class="chat-heading">Contacts</h2>
+      <button id="add-contact-button" class="add-contact-button">+</button>
+    </div>
 
-<div class="chat-left-body">
-  <div class="contact-card">
-    <img src="{{ url_for('static', filename='images/user.png') }}" class="contact-img" alt="Profile">
-    <div class="contact-info">
-      <div class="contact-name">Jilm Wilmsom</div>
-      <div class="contact-preview">I am short</div>
+    <div class="chat-left-body">
+      <ul class="contact-list">
+        {% for contact in contacts %}
+          <li class="contact-card" data-contact-id="{{ contact[0] }}">
+            <img src="{{ url_for('static', filename='images/user.png') }}" class="contact-img" alt="Profile">
+            <div class="contact-info">
+            <div class="contact-name">{{ contact[1] }}</div> 
+            <div class="contact-preview">{{ contact[2] or "No messages yet" }}</div> 
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
-  </div>
 
-  <div class="contact-card">
-    <img src="{{ url_for('static', filename='images/user.png') }}" class="contact-img" alt="Profile">
-    <div class="contact-info">
-      <div class="contact-name">Leobeobob</div>
-      <div class="contact-preview">hi</div>
-    </div>
-  </div>
-  <div class="contact-card">
-    <img src="{{ url_for('static', filename='images/user.png') }}" class="contact-img" alt="Profile">
-    <div class="contact-info">
-      <div class="contact-name">BRT</div>
-      <div class="contact-preview">i like little kids</div>
-    </div>
-  </div>
-    <div class="contact-card">
-    <img src="{{ url_for('static', filename='images/user.png') }}" class="contact-img" alt="Profile">
-    <div class="contact-info">
-      <div class="contact-name">John Citizen</div>
-      <div class="contact-preview">Hey! Still up for studying?</div>
-    </div>
-  </div>
-    <div class="contact-card">
-    <img src="{{ url_for('static', filename='images/user.png') }}" class="contact-img" alt="Profile">
-    <div class="contact-info">
-      <div class="contact-name">John Citizen</div>
-      <div class="contact-preview">Hey! Still up for studying?</div>
-    </div>
-  </div>
-    <div class="contact-card">
-    <img src="{{ url_for('static', filename='images/user.png') }}" class="contact-img" alt="Profile">
-    <div class="contact-info">
-      <div class="contact-name">John Citizen</div>
-      <div class="contact-preview">Hey! Still up for studying?</div>
-    </div>
-  </div>
-    <div class="contact-card">
-    <img src="{{ url_for('static', filename='images/user.png') }}" class="contact-img" alt="Profile">
-    <div class="contact-info">
-      <div class="contact-name">John Citizen</div>
-      <div class="contact-preview">Hey! Still up for studying?</div>
-    </div>
-  </div>
-    <div class="contact-card">
-    <img src="{{ url_for('static', filename='images/user.png') }}" class="contact-img" alt="Profile">
-    <div class="contact-info">
-      <div class="contact-name">John Citizen</div>
-      <div class="contact-preview">Hey! Still up for studying?</div>
-    </div>
-  </div>
-    <div class="contact-card">
-    <img src="{{ url_for('static', filename='images/user.png') }}" class="contact-img" alt="Profile">
-    <div class="contact-info">
-      <div class="contact-name">John Citizen</div>
-      <div class="contact-preview">Hey! Still up for studying?</div>
-    </div>
-  </div>
-
-
-  <!-- Repeat more contact cards here -->
+    <div id="add-contact-popup" class="add-contact-popup hidden">
+  <form method="POST" action="{{ url_for('add_contact_by_email') }}">
+    <h3>Add Contact by Email</h3>
+    <input type="email" name="contact_email" placeholder="Enter email..." required>
+    <button type="submit">Add</button>
+  </form>
 </div>
+  </div>
+
+  <div class="chat-divider"></div>
+
+  <div class="chat-right">
+    <div class="chat-right-header">
+      <h2 class="chat-heading chat-heading-right">Selected Chat</h2>
+      <div class="chat-subdivider"></div>
     </div>
-
-    <!-- DIVIDER -->
-    <div class="chat-divider"></div>
-
-    <!-- RIGHT COLUMN -->
-    <div class="chat-right">
-      <div class="chat-right-header">
-        <h2 class="chat-heading chat-heading-right">Selected Chat</h2>
-        <div class="chat-subdivider"></div>
-      </div>
-
-      <div class="chat-right-body">
-        <div class="chat-messages">
-          <div class="message message-sent">Hello there my friend</div>
-          <div class="message message-received">I am short</div>
-          <div class="message message-sent">Chiggin Nuggies</div>
-          <div class="message message-received">Chiggin Nuggies</div>
-          <div class="message message-sent">Hello there my friend</div>
-          <div class="message message-received">I am short</div>
-          <div class="message message-sent">Chiggin Nuggies</div>
-          <div class="message message-received">Chiggin Nuggies</div>
-          <div class="message message-sent">Hello there my friend</div>
-          <div class="message message-received">I am short</div>
-          <div class="message message-sent">Chiggin Nuggies</div>
-          <div class="message message-received">Chiggin Nuggies</div>
-          <div class="message message-sent">Hello there my friend</div>
-          <div class="message message-received">I am short</div>
-          <div class="message message-sent">Chiggin Nuggies</div>
-          <div class="message message-received">Chiggin Nuggies</div>
-        </div>
-      </div>
-
-      <div class="chat-input-bar">
-        <input type="text" placeholder="Type message..." class="chat-input">
-        <button class="chat-send-button">
-          <img src="{{ url_for('static', filename='images/sendmessage.png') }}" class="contact-img" alt="Profile">
-        </button>
-      </div>
+    <div class="chat-right-body">
+      <div class="chat-messages"></div>
+    </div>
+    <div class="chat-input-bar">
+      <input type="text" placeholder="Type message..." class="chat-input">
+      <button class="chat-send-button">
+        <img src="{{ url_for('static', filename='images/sendmessage.png') }}" class="contact-img" alt="Send">
+      </button>
     </div>
   </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+<div id="user-data" data-user-id="{{ session.userID }}"></div>
 {% endblock %}

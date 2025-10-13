@@ -1,50 +1,61 @@
-{% extends 'layout.html' %} {% block content %}
-    {% for row in content %}
-{% endfor %}
-<div class="logo">
-    <img src="{{ url_for('static', filename='images/Accord.png') }}" alt="Accord Logo" style="height:50%; width:50%">
-</div>
-<div class="nextclass">
-  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="nextclass-icon">
-  <div class="nextclass-text">Filler text</div>
-</div>
-<div class="schedule-wrapper">
-<div class="schedule-left">
-<div class="schedule-box">
-  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
-<div class="schedule-text">Filler text</div>
-</div>
-<div class="schedule-box">
-  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
-<div class="schedule-text">Filler text</div>
-</div>
-<div class="schedule-box">
-  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
-<div class="schedule-text">Filler text</div>
-</div>
-<div class="schedule-box">
-  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
-<div class="schedule-text">Filler text</div>
-</div>
-</div>
+{% extends 'layout.html' %}
+{% block content %}
 
-  <div class="schedule-right">
-<div class="schedule-box">
-  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
-  <div class="schedule-text">Filler text</div>
-</div>
-<div class="schedule-box">
-  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
-  <div class="schedule-text">Filler text</div>
-</div>
-<div class="schedule-box">
-  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
-<div class="schedule-text">Filler text</div>
-</div>
-<div class="schedule-box">
-  <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
-<div class="schedule-text">Filler text</div>
-</div>
+  <div class="logo-classes-page">
+    <img src="{{ url_for('static', filename='images/Accord.png') }}" alt="Accord Logo">
   </div>
+
+<div class="nextclass" style="background-color: {{ current_class.color | default('#f0f0f0') }};">
+    <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="nextclass-icon">
+    {% if current_class %}
+      <div class="nextclass-text">
+        {{ current_class.subject }} — {{ current_class.location }} at {{ current_class.time }}
+      </div>
+    {% else %}
+      <div class="nextclass-text">No more classes today</div>
+    {% endif %}
+  </div>
+
+  <div class="schedule-wrapper">
+    <div class="schedule-left">
+      {% for slot in schedule_left %}
+<div class="schedule-box" style="background-color: {{ slot.color | default('#eee') }} !important;">
+        <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
+        <div class="schedule-text">
+          {% if slot %}
+            <strong>{{ slot.label }}</strong><br>
+            {{ slot.subject }} — {{ slot.location }}<br>
+            {{ slot.start }}–{{ slot.end }}
+          {% else %}
+            <em>Unavailable</em>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+<div class="schedule-right">
+  {% for slot in schedule_right %}
+    {% if slot %}
+<div class="schedule-box" style="background-color: {{ slot.color | default('#eee') }} !important;">
+        <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
+        <div class="schedule-text">
+          <strong>{{ slot.label }}</strong><br>
+          {{ slot.subject }} — {{ slot.location }}<br>
+          {{ slot.start }}–{{ slot.end }}
+        </div>
+      </div>
+    {% else %}
+      <div class="schedule-box" style="background-color: #eee;">
+        <img src="{{ url_for('static', filename='images/timetableicon.png') }}" alt="Icon" class="schedule-icon">
+        <div class="schedule-text">
+          <em>Unavailable</em>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>
+    </div>
+  </div>
+
 {% endblock %}

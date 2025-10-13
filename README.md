@@ -72,3 +72,11 @@ Today, I figured out
 **Tuesday, 26/08/25**
 
 **Wednesday, 27/08/25**
+
+# Week 7
+
+# Week 8
+
+# Week 9
+
+# Week 10

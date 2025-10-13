@@ -1,0 +1,32 @@
+.speech-bubble {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  color: #0f2034;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #ffffff;
+}
+
+.message-timestamp {
+  color: #000000;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  text-align: right;
+}

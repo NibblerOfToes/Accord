@@ -1,0 +1,141 @@
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: white;
+  border-right: 1px solid #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+
+.nav-list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #0f2034;
+  font-weight: 600;
+  gap: 8px;
+}
+
+.nav-list a:hover {
+  color: #046b88;
+}
+
+.nav-list img {
+  width: 60px;
+  height: 80px;
+}
+
+.user-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.user-icon img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.title {
+  text-align: center;
+}
+
+
+.nextclass-home {
+  position: absolute;
+  top: 50px;
+  left: 330px;
+  width: 560px;
+  height: 140px;
+  background-color: #ffe680;
+  border-radius: 16px;
+  padding: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f2034;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 900;
+}
+
+.nextclass-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.nextclass-text {
+  flex: 1;
+  text-align: center;
+}
+
+
+.logo-home {
+  position: absolute;
+  top: 50px;
+  right: 200px;
+  width: 240px;
+  z-index: 1000;
+}
+
+.logo-home img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 220px;
+  padding: 40px;
+  height: calc(100vh - 80px);
+  box-sizing: border-box;
+}
+
+.right-panel {
+  position: absolute;
+  top: 210px;
+  right: 100px;
+  bottom: 40px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

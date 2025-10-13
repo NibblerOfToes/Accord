@@ -2,10 +2,10 @@
 {% block content %}
   <div class="login-wrapper">
     <div class="login-box">
-      <p>Logged in as <strong>{{ name }}</strong></p>
-      <form action="{{ url_for('logout') }}" method="POST">
-        <button type="submit">Logout</button>
-      </form>
+<p class="profile-greeting">Welcome back, <strong>{{ name }}</strong>!</p>
+<form action="{{ url_for('logout') }}" method="POST">
+  <button type="submit" class="logout-button">Logout</button>
+</form>
     </div>
   </div>
 {% endblock %}
