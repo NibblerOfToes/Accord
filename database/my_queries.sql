@@ -118,18 +118,18 @@
 -- 2. Show all classes
 --SELECT * FROM classes;
 
--- 3. Find which classes a specific user is taking (example: userID = 1)
+-- 3. Find which classes a specific user is taking
 --SELECT subject
 --FROM classes
 --JOIN userClasses ON classes.classID = userClasses.classID
 --WHERE userClasses.userID = 1;
 
--- 4. See all messages sent by a user (example: userID = 4)
+-- 4. See all messages sent by a user
 --SELECT text, date, time
 --FROM messages
 --WHERE userID = 4;
 
--- 5. View the timetable for a class (example: classID = 3)
+-- 5. View the timetable for a class
 --SELECT subject, period, time
 --FROM classes
 --JOIN timetable ON classes.classID = timetable.classID

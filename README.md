@@ -60,38 +60,48 @@ Test cases:
 Today, I began setting up the database by following through the instructions in the setup document on google classroom. I downloaded python, pip, and all of the required extensions, before working through the document up until the creation of the files and the folders.
 
 **Tuesday, 19/08/25**
-Today, I finished working through the document and setting up my database. I created all of the folders necessary for my database, before creating the database table and running commands to populate it.
+Today, I finished working through the document and setting up my database, including creating all of the folders necessary for my database.
 
 **Thursday, 21/08/25**
-Today, I figured out 
+Today, I figured out how to create the necessary tables for my database and presented my (somewhat) complete database to my client.
 
 # Week 6
 
 **Monday, 25/08/25**
+Today I finished creating all my necessary tables including a users table, a messages table, a contacts table, a timetable table, and a classes table. I also populated my database with data, including 10 unique users and 13 different classes/subjects.
 
 **Tuesday, 26/08/25**
+Today I started designing my SQL queries, including one to show all users and classes, which will be helpful in locating specific data from my table that needs to be sorted through when I later add functionality. Additionally, I created a query to figure out which classes a user is taken, which will be necessary later on when creating a functional timetable.
 
 **Wednesday, 27/08/25**
+Today I finished off my last two SQL queries and presented my database to my client. These SQL queries included one to view the timetable for a specific class, which I will also need later on when creating the timetable, as well as a query to see messages sent by a specific user, which will need to be found when designing my messaging system.
 
 # Week 7
 
 **Monday, 01/09/25**
 
+
 **Tuesday, 02/09/25**
 
+
 **Thursday, 04/09/25**
+
 
 # Week 8
 
 **Monday, 08/09/25**
 
+
 **Tuesday, 09/09/25**
 
+
 **Wednesday, 10/09/25**
+
 
 # Week 9
 
 **Monday, 15/09/25**
+Today I began on the messaging system, but mostly ended up messing up all of the foundations I had previously made. I didnt really get much done productively.
 
 **Tuesday, 16/09/25**
 
@@ -100,12 +110,16 @@ Today, I figured out
 # Week 10
 
 **Monday, 22/09/25**
+Today 
 
 **Tuesday, 23/09/25**
 
 **Wednesday, 24/09/25**
+Today I 
 
 # Holidays!!!
+
+**Sunday, 12/10/25**
 
 **Monday, 13/10/25**
 Today, I finalised my app by finishing up the functionality of the messaging system and timetable, as well as implementing a public messaging system for teachers and cleaning up the aesthetics of the app.
