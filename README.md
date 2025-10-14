@@ -96,23 +96,23 @@ Today I created two additional pages for my timetable and chat pages, before beg
 Today, I quickly finished my timetable page by adding a logo in the corner, before beginning on the design of my chat page. I divided the page into two columns the same way I designed in my figma, before creating a series of little grey boxes for contact cards and a (very basic) set of bubbles and a messaging bar for the actual messages.
 
 **Wednesday, 10/09/25**
-Today I finalised the layout and design of my chat page, before presenting all three of my pages to my client.
+Today I finalised the design/colouring of my chat page, before presenting all three of my pages to my client.
 
 # Week 9
 
 **Monday, 15/09/25**
-Today I began on the messaging system, but mostly ended up messing up all of the foundations I had previously made. I didnt really get much done productively.
+Today I worked on implementing the example code into my app, including set up all of my javascript files. I also fiddled with my main.py and database_manager.py files for a bit to figure out how to link them to my database.
 
 **Tuesday, 16/09/25**
-
+Today I began (trying) to add functionality to my messaging system, although it was a bit of a struggle trying to figure out how to use javascript. In the end I managed to make the contact buttons interactable so they would highlight when you clicked on them individually. Additionally I ran a lighthouse report on each of my pages and took screenshots of the results, which were all near perfect except for best practices.
 
 **Thursday, 18/09/25**
-Today I presented my app to my client, as well as the lighthouse reports that I had run previously. Additionally, I continued (trying) to implement some functionality into my messaging system.
+Today I presented my app to my client, as well as the lighthouse reports that I had run previously. Additionally, I continued (trying) to implement some functionality into my messaging system, although all I really managed was to make the messages change (even though there weren't any messages there to begin with).
 
 # Week 10
 
 **Monday, 22/09/25**
-Today 
+Today I continued on my messaging system
 
 **Tuesday, 23/09/25**
 
@@ -122,6 +122,7 @@ Today I
 # Holidays!!!
 
 **Sunday, 12/10/25**
+Today I began on the functionality of my timetable, managing to make it change colour/periods based on the day of the week as well as the time of day. I also began making the bar at the top that will eventually show the current/upcoming class.
 
 **Monday, 13/10/25**
 Today, I finalised my app by finishing up the functionality of the messaging system and timetable, as well as implementing a public messaging system for teachers and cleaning up the aesthetics of the app.
