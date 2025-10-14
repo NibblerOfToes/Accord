@@ -112,12 +112,14 @@ Today I presented my app to my client, as well as the lighthouse reports that I 
 # Week 10
 
 **Monday, 22/09/25**
-Today I continued on my messaging system
+Today I got bored of my messaging system so I decided to create a login page and style it to match with the rest of my site.
 
 **Tuesday, 23/09/25**
+Today I began to add functionality to my login page, making it connect to users in the 'users' table of my database via email and password. I also finished the stylisation and formatting of my login page.
+![loginpage](static/images/Login.png)
 
 **Wednesday, 24/09/25**
-Today I 
+Today I presented my unfinished chat page as well as my completed login system to my client, before managing to figure out (mostly) how to send messages between my users.
 
 # Holidays!!!
 
@@ -125,9 +127,10 @@ Today I
 Today I began on the functionality of my timetable, managing to make it change colour/periods based on the day of the week as well as the time of day. I also began making the bar at the top that will eventually show the current/upcoming class.
 
 **Monday, 13/10/25**
-Today, I finalised my app by finishing up the functionality of the messaging system and timetable, as well as implementing a public messaging system for teachers and cleaning up the aesthetics of the app.
+Today, I finalised my app by finishing up the functionality of the messaging system and timetable, created a sign up page, as well as implemented a public messaging system for teachers and cleaned up the aesthetics of the app.
 
 # Finished Product:
 ![homepage](static/images/Homepage.png)
 ![timetable](static/images/Timetablepage.png)
 ![chat](static/images/Chat.png)
+![signuppage](static/images/Signup.png)
