@@ -75,8 +75,39 @@ Today, I figured out
 
 # Week 7
 
+**Monday, 01/09/25**
+
+**Tuesday, 02/09/25**
+
+**Thursday, 04/09/25**
+
 # Week 8
+
+**Monday, 08/09/25**
+
+**Tuesday, 09/09/25**
+
+**Wednesday, 10/09/25**
 
 # Week 9
 
+**Monday, 15/09/25**
+
+**Tuesday, 16/09/25**
+
+**Thursday, 18/09/25**
+
 # Week 10
+
+**Monday, 22/09/25**
+
+**Tuesday, 23/09/25**
+
+**Wednesday, 24/09/25**
+
+# Holidays!!!
+
+**Monday, 13/10/25**
+Today, I finalised my app by finishing up the functionality of the messaging system and timetable, as well as implementing a public messaging system for teachers and cleaning up the aesthetics of the app.
+
+# Finished Product:
