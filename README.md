@@ -111,6 +111,6 @@ Today, I figured out
 Today, I finalised my app by finishing up the functionality of the messaging system and timetable, as well as implementing a public messaging system for teachers and cleaning up the aesthetics of the app.
 
 # Finished Product:
-![homepage](static/images/homepage.png)
-![timetable](static/images/timetablepage.png)
-![chat](static/images/chat.png)
+![homepage](static/images/Homepage.png)
+![timetable](static/images/Timetablepage.png)
+![chat](static/images/Chat.png)
