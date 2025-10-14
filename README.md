@@ -79,24 +79,24 @@ Today I finished off my last two SQL queries and presented my database to my cli
 # Week 7
 
 **Monday, 01/09/25**
-
+Today I worked through the example document to set up a basic html/css page. However, i deleted most of the code as I didn't need the contact cards, and began writing my own to better format my headers.
 
 **Tuesday, 02/09/25**
-
+Today I worked a lot on my homepage, placing my headers in the desired places on the page the same way I had designed them in my figma, before creating places to see both public and private messages as well as a timetable icon in the top left. Additionally, I coloured my page using CSS and gave it some small design touches such as the rounding of corners.
 
 **Thursday, 04/09/25**
-
+Today I finalised formatting the layout and design of my homepage, before presenting my homepage to my client (although it was slightly behind schedule).
 
 # Week 8
 
 **Monday, 08/09/25**
-
+Today I created two additional pages for my timetable and chat pages, before beginning to deign my timetable page. It was fairly simple, as I followed my figma design and created 8 blank grey boxes (which will later change colour/text once I implement functionality), as well as a bar at the top that will eventually show the current/upcoming class.
 
 **Tuesday, 09/09/25**
-
+Today, I quickly finished my timetable page by adding a logo in the corner, before beginning on the design of my chat page. I divided the page into two columns the same way I designed in my figma, before creating a series of little grey boxes for contact cards and a (very basic) set of bubbles and a messaging bar for the actual messages.
 
 **Wednesday, 10/09/25**
-
+Today I finalised the layout and design of my chat page, before presenting all three of my pages to my client.
 
 # Week 9
 
@@ -105,7 +105,9 @@ Today I began on the messaging system, but mostly ended up messing up all of the
 
 **Tuesday, 16/09/25**
 
+
 **Thursday, 18/09/25**
+Today I presented my app to my client, as well as the lighthouse reports that I had run previously. Additionally, I continued (trying) to implement some functionality into my messaging system.
 
 # Week 10
 
