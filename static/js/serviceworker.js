@@ -1,5 +1,6 @@
 const assets = [
   "/",
+  // CSS
   "/static/css/style.css",
   "/static/css/base.css",
   "/static/css/chat.css",
@@ -9,12 +10,26 @@ const assets = [
   "/static/css/schedule.css",
   "/static/css/signup.css",
   "/static/css/speech.css",
+
+  // JS
   "/static/js/app.js",
   "/static/js/chat.js",
   "/static/js/signup.js",
-  "/static/images/logo.png",
+
+  // Icons
+  "/static/icons/favicon-96x96.png",
+  "/static/icons/favicon.png",
+  "/static/icons/favicon.svg",
+  "/static/icons/logo.png",
+  "/static/icons/web-app-manifest-192x192.png",
+  "/static/icons/web-app-manifest-512x512.png",
+
+  // Images
   "/static/images/Accord.png",
+  "/static/images/apple-touch-icon.png",
   "/static/images/Chat.png",
+  "/static/images/default_avatar.png",
+  "/static/images/favicon.ico",
   "/static/images/home.png",
   "/static/images/Homepage.png",
   "/static/images/jilm.png",
@@ -27,7 +42,7 @@ const assets = [
   "/static/images/timetableicon.png",
   "/static/images/Timetablepage.png",
   "/static/images/user.png",
-  "/static/images/week3alternate.png",
+  "/static/images/week3alternate.png"
 ];
 
 const CATALOGUE_ASSETS = "catalogue-assets";

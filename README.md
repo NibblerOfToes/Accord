@@ -134,3 +134,6 @@ Today, I finalised my app by finishing up the functionality of the messaging sys
 ![timetable](static/images/Timetablepage.png)
 ![chat](static/images/Chat.png)
 ![signuppage](static/images/Signup.png)
+
+**Wednesday, 15/10/25**
+Today I tried to figure how to get my serviceworker to function now that my app is done but it just didn't work and I have no idea why.
