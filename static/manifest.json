@@ -1,6 +1,6 @@
 {
-  "name": "VSCode Extension Catalogue",
-  "short_name": "vscodeextcat",
+  "name": "Accord",
+  "short_name": "Accord",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#fdfdfd",
@@ -8,67 +8,19 @@
   "orientation": "landscape-primary",
   "icons": [
     {
-      "src": "icons/icon-128x128.png",
-      "type": "image/png",
-      "sizes": "128x128",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/icon-128x128.png",
-      "type": "image/png",
-      "sizes": "128x128",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-192x192.png",
-      "type": "image/png",
+      "src": "/static/icons/web-app-manifest-192x192.png",
       "sizes": "192x192",
-      "purpose": "maskable"
+      "type": "image/png"
     },
     {
-      "src": "icons/icon-192x192.png",
-      "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-384x384.png",
-      "type": "image/png",
-      "sizes": "384x384",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/icon-384x384.png",
-      "type": "image/png",
-      "sizes": "384x384",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-512x512.png",
-      "type": "image/png",
+      "src": "/static/icons/web-app-manifest-512x512.png",
       "sizes": "512x512",
-      "purpose": "maskable"
+      "type": "image/png"
     },
     {
-      "src": "icons/icon-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "any"
+      "src": "/static/icons/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
     }
-  ],
-  "screenshots": [
-    {
-      "src": "icons/desktop_screenshot.png",
-      "sizes": "1920x1080",
-      "type": "image/png",
-      "label": ""
-    },
-    {
-      "src": "icons/mobile_screenshot.png",
-      "sizes": "1080x1920",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": ""
-    }
-  ]
+   ]
 }
