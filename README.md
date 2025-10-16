@@ -137,3 +137,12 @@ Today, I finalised my app by finishing up the functionality of the messaging sys
 
 **Wednesday, 15/10/25**
 Today I tried to figure how to get my serviceworker to function now that my app is done but it just didn't work and I have no idea why.
+
+**Instructions**
+1. Download all the files from the repository
+2. Load into VS code
+3. Run Flask
+4. Run python main.py in the terminal
+
+**Acknowledgements**
+I got a lot of help from Microsoft Copilot with coding and bugfixing throughout my project.
